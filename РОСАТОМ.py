@@ -50,7 +50,7 @@ def get_currency_rates(currency, start_date, end_date):
     return data["history"]["data"]
 
 
-# добавление данных в существующий файл Excel
+# добавление данных в Excel
 def append_to_excel(dataframe, file_name):
     wb = load_workbook(file_name)
     ws = wb.active
